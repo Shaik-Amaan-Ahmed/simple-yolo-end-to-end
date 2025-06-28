@@ -12,7 +12,7 @@ model = YOLO("yolov8n.pt")
 # Serve static files (like output image)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-@app.get("/", response_class=HTMLResponse)
+@app.get("/movie", response_class=HTMLResponse)
 async def upload_form():
     return """
     <html>
