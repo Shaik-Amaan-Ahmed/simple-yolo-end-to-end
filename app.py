@@ -46,7 +46,7 @@ async def detect(file: UploadFile = File(...)):
             <h1>Detection Completed</h1>
             <img src="/static/output.jpg" alt="Detected Image" style="max-width: 600px;">
             <br><br>
-            <a href="/">Try another image</a>
+            <a href="/movie">Try another image</a>
         </body>
     </html>
     """
